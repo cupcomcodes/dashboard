@@ -1,0 +1,80 @@
+
+
+// container
+.dash__container {
+  height: 100vh; 
+  &-flex {
+    @include flexbox();
+  }
+  &-content {
+    padding-left: 50px;
+    transition: .4s; 
+    background: #f1f4f6;
+    padding-top: 15px; 
+    padding-bottom: 15px; 
+  }
+} 
+ 
+// section
+
+.dash__section { 
+  height: auto;   
+  width: 50px;
+  display: block;
+  height: 50px;
+  transition: .4s; 
+
+  &-menu-mobile {
+    display: none; 
+  }
+}
+
+// title
+.dash__title {
+  padding: 15px;
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $pallete-borders; 
+  i {
+    margin-right: 15px;
+    color: $primary;
+    font-size: 22px; 
+  }
+  &-text {
+    color: $text; 
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      position: absolute;
+      bottom: -2px;
+      height: 3px;
+      left: 0;
+      background: $primary; }
+  }
+}
+
+// thumb
+
+.thumb-nail {
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $white; }
+
+  .nav-list {
+    list-style: none;
+
+    li {
+      padding: 5px 15px;
+      i {
+        margin-right: 10px;
+      }
+      &:hover {
+        background: $light;
+      }
+    }
+  }

@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="keywords" content="HTML, CSS, XML, Freelancer, Front-end, uidesign, uxdesign, design, dashboard">
+    <meta name="author" content="Gustavo Galego">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/root.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="dash__container collapse-expand">
+      <div class="dash__container-flex">
+          <!-- add class expand menu -->
+          <section class="dash__section">
+              <div class="dash__section-menu-mobile">
+                  <i class="fas fa-bars"></i>
+              </div>
+              <nav class="dash__nav">
+                <ul class="dash__list">
+                  <!-- button extract retract menu -->
+                  <li class="dash__list-link dash__list-expand expand">
+                      <i class="fas fa-arrow-right expand-item"></i>
+                      <span class="dash__list-name expand-item">Expand</span>
+                      <i class="fas fa-arrow-left retract-item"></i>
+                      <span class="dash__list-name retract-item">Retract</span>
+                  </li>
+                  <!-- //button extract retract menu -->
+
+                  <!-- items menu -->
+                  <li class="dash__list-item">
+                      <a href="index.html" class="dash__list-link">
+                          <i class="fas fa-tachometer-alt"></i>
+                          <span class="dash__list-name">Dashboard</span>
+                      </a>
+                  </li>
+                  <li class="dash__list-item" id="headingOne">
+                      <a  class="dash__list-link" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne">
+                          <i class="fas fa-table"></i>
+                          <span class="dash__list-name">Pages</span>
+                      </a>
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                          <ul class="dash__sub">
+                              <li class="dash__sub-item"><a class="dash__sub-link" href="pages/login.html">Login</a></li>
+                              <li class="dash__sub-item"><a class="dash__sub-link" href="pages/register.html">Register</a></li>
+                              <li class="dash__sub-item"><a class="dash__sub-link" href="pages/forgot.html">Forgot Password</a></li>
+                          </ul>
+                      </div>
+                  </li>
+
+                  <li class="dash__list-item" id="headingTwo">
+                    <a  class="dash__list-link" data-toggle="collapse" data-target="#collapseTwo" aria-controls="collapseTwo">
+                        <i class="fas fa-desktop"></i>
+                        <span class="dash__list-name">Elements</span>
+                    </a>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne">
+                        <ul class="dash__sub">
+                            <li class="dash__sub-item"><a class="dash__sub-link" href="elements-1.html">Elements 1</a></li>
+                            <li class="dash__sub-item"><a class="dash__sub-link" href="elements-2.html">Elements 2</a></li>
+                            <li class="dash__sub-item"><a class="dash__sub-link" href="elements-3.html">Elements 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                  
+                <li class="dash__list-item">
+                  <a href="form.html" class="dash__list-link">
+                      <i class="fas fa-users"></i>
+                      <span class="dash__list-name">Form</span>
+                  </a>
+              </li>
+              <li class="dash__list-item">
+                  <a href="icons.html" class="dash__list-link">
+                    <i class="fas fa-icons"></i>
+                      <span class="dash__list-name">Icons</span>
+                  </a>
+              </li>
+              <!-- //items menu -->
+
+              </ul>
+              </nav>
+          </section>
+          <!-- header -->
+          <header class="header">
+              <div class="header__container">
+                  <div class="search">
+                         <input type="email" class="search__input" placeholder="Search for:">
+                      <button class="search__button">Search<i class="fas fa-search"></i></button>
+                  </div>
+                  <div class="nav__menu">
+                      <ul class="nav__menu-list">
+                          <li class="nav__menu-list-item">
+                              <a href="#" class="nav__menu-list-item-link">
+                                  <i class="fas fa-bell"></i>
+                              </a>
+                          </li>
+                          <li class="nav__menu-list-item">
+                              <a href="#" class="nav__menu-list-item-link px-3">
+                                  <img class="thumb-nail" src="https://i.ibb.co/0VLnn12/thumb.jpg" alt="thumb">
+                                  <span class="ml-3">Username Admin</span>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </header>
+      </div>
+
+      <!-- content -->
+      <div class="dash__container-content">
+          <div class="container-fluid p-h-100">
+              <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                      <h1 class="display-4">Elements</h1>
+                      <p class="lead">design and code by: <a href="https://www.cupcom.com.br" target="_blank">Cupcom</a></p>
+                  </div>
+              </div>
+              <!-- cards -->
+                <div class="col-12 bg-white border radius pb-4 mb-5">
+                    <div class="dash__title">
+                        <i class="fas fa-table"></i>
+                        <h5 class="dash__title-text">Spinner</h5>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6 col-12">
+                        <h3 class="mb-3">Border Spinner</h3>
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-border text-secondary" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-border text-success" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-border text-danger" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-border text-warning" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-border text-info" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-border text-light" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-border text-dark" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <hr>
+                          <button class="btn btn-primary" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            <span class="sr-only">Loading...</span>
+                          </button>
+                          <button class="btn btn-primary" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                          </button>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                        <h3 class="mb-3">Growing spinner</h3>
+                        <div class="spinner-grow text-primary" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-secondary" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-success" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-danger" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-warning" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-info" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-light" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <div class="spinner-grow text-dark" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                          <hr>
+                          <button class="btn btn-primary" type="button" disabled>
+                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                            <span class="sr-only">Loading...</span>
+                          </button>
+                          <button class="btn btn-primary" type="button" disabled>
+                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                            Loading...
+                          </button>
+                    </div>
+                </div>
+                </div>
+
+                 <div class="col-12 bg-white border radius pb-4 mb-5"> 
+                    <div class="dash__title">
+                        <i class="fas fa-table"></i>
+                        <h5 class="dash__title-text">Toast</h5>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-6 col-12 ">
+                        <h3 class="mb-3">Exemple</h3>
+                      
+                        <button id="info" class="btn btn-info">Info</button>
+                        <button id="success" class="btn btn-success">Success</button>
+                        <button id="warning" class="btn btn-warning">Warning</button>
+                        <button id="danger" class="btn btn-danger">Danger</button>
+                          
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-12 bg-white border radius pb-4 mb-5"> 
+                  <div class="dash__title">
+                      <i class="fas fa-table"></i>
+                      <h5 class="dash__title-text">Modal</h5>
+                  </div>
+                  <div class="row">
+                  <div class="col-md-6 col-12 ">
+                      <h3 class="mb-3">Exemple</h3>
+                    
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Launch demo modal
+                      </button>
+
+                      <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                ...
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <a class="btn btn-light" target="blank" href="https://getbootstrap.com/docs/4.4/components/modal/">More Modal Boostrap</a>
+                        
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 bg-white border radius pb-4 mb-5"> 
+                <div class="dash__title">
+                    <i class="fas fa-table"></i>
+                    <h5 class="dash__title-text">ProgressBar</h5>
+                </div>
+                <div class="row">
+                <div class="col-md-6 col-12 ">
+                    <h3 class="mb-3">Striped</h3>
+                  
+                    <div class="progress mb-3">
+                      <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3">
+                      <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3">
+                      <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3">
+                      <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-3">
+                      <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+       
+                      
+                </div>
+
+                <div class="col-md-6 col-12 ">
+                  <h3 class="mb-3">Solid</h3>
+                
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+
+              </div>
+
+              <div class="col-12 ">
+                <h3 class="mb-3">Animate</h3>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+    <script src="js/root.js"></script>
+    <script src="js/bootoast.min.js"></script>
+    <script>
+        $( "#info" ).click(function() {
+          bootoast.toast({
+            message: 'This is an info toast message'
+          });
+        });
+        
+        $( "#success" ).click(function() {
+          bootoast.toast({
+            message: 'This is a success toast message',
+             type: 'success'
+          });
+        });
+        
+        $( "#warning" ).click(function() {
+          bootoast.toast({
+            message: 'This is a warning toast message',
+             type: 'warning'
+          });
+        });
+        
+        $( "#danger" ).click(function() {
+          bootoast.toast({
+            message: 'This is a danger toast message',
+             type: 'danger'
+          });
+        });
+        
+        </script>
+  </body>
+</html>

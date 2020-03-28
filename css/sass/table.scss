@@ -1,0 +1,54 @@
+.dash__table {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border-radius: 3px;
+  padding: 15px;
+  background: $white;
+
+  .dataTables_filter,
+  .pagination {
+    float: right; 
+  }
+  .table-bordered td,
+.table-bordered th {
+  border: 1px solid $pallete-borders; }
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 1px solid $pallete-borders; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: $white; }
+
+.dataTables_filter label,
+.dataTables_length label {
+  @include flexbox();
+  @include align-items(center);
+  margin-bottom: 15px; 
+  height: 50px; }
+ 
+.dataTables_length .form-control-sm {
+  width: 57px;
+  margin: 0 15px; }
+
+.dataTables_filter .form-control-sm {
+  width: 200px;
+  margin: 0 15px; }
+
+.table-hover tbody tr:hover {
+  color: $text ; 
+  background-color: rgba(112, 161, 255, 0.22) !important; }
+
+tfoot,
+thead {
+  background: $primary; }
+
+tfoot tr th,
+thead tr th {
+  color: $white;
+  font-weight: 500; }
+
+ }
+
+
+

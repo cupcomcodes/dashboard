@@ -1,0 +1,38 @@
+.dash__card {
+  &-content {
+    border-radius: 3px;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 3px; 
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    i {
+      font-size: 50px;
+      color: $white; 
+    }
+    .items {
+      display: flex;
+      flex-direction: column; 
+      @include flexbox();
+      @include flex-direction(column);
+    }
+    .order_number {
+      color: $white; 
+      font-size: 33px;  
+    }
+    .order_text {
+      color: $white 
+    }  
+  }
+}
+
+
+
+
+
+
+
+ 
+   

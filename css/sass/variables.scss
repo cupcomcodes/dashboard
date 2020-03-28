@@ -1,0 +1,192 @@
+
+$transition: 100ms all linear 0s !important;
+$shadow: inset 0px -4px 39px -9px rgba(0,0,0,0.39) !important;
+$black: #2f3640 !important;
+$white: #fff !important;
+$primary: #70a1ff !important;
+$secondary: #95a5a6 !important;
+$success: #4cd137 !important;
+$danger: #c0392b !important;
+$warning: #fbc531 !important;
+$info: #9c88ff !important;
+$light: #ecf0f1 !important;
+$dark: #2f3640 !important;
+$radius: 25px !important;
+$border-transparent: transparent !important;
+$bg-transparent: transparent !important;
+$none: 0 !important;
+$text: #212529;
+$padding-button: 5px 20px;
+$border-form: #dee2e6;
+
+
+$pallete1: #00a8ff !important;
+$pallete2: #9c88ff !important;
+$pallete3: #4cd137 !important;
+$pallete4: #fbc531 !important;
+$pallete-icons: #70a1ff !important;
+$pallete-borders:  #f5f5f5 !important; 
+$white: #fff !important;
+$color-hover: rgba(112,161,255,.22)!important;
+
+/* color pallet */
+.color1 {
+  background: $pallete1 }
+
+.color2 {
+  background: $pallete2 }
+
+.color3 {
+  background: $pallete2 }
+
+.color4 { 
+  background: $pallete4 }
+
+.dash_shadow {
+  box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.07); }
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 3px; } 
+
+.p-h-100 {
+  height: 100vh !important; }
+ 
+
+  // Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+     -moz-box-flex: $values;
+      -webkit-flex: $values;
+  	  -ms-flex: $values;
+  	      flex: $values;
+}
+
+
+// row | row-reverse | column | column-reverse
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+     -moz-flex-direction: $direction;
+      -ms-flex-direction: $direction;
+          flex-direction: $direction;
+}
+
+
+// nowrap | wrap | wrap-reverse
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+     -moz-flex-wrap: $wrap;
+      -ms-flex-wrap: $wrap;
+          flex-wrap: $wrap;
+}
+
+// Flex Direction and Wrap
+// - applies to: flex containers
+// <flex-direction> || <flex-wrap>
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+     -moz-flex-flow: $flow;
+      -ms-flex-flow: $flow;
+          flex-flow: $flow;
+}
+
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+     -moz-box-ordinal-group: $val;     
+  	     -ms-flex-order: $val;     
+  	      -webkit-order: $val;  
+  		      order: $val;
+}
+
+
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+     -moz-flex-grow: $grow;
+      -ms-flex-grow: $grow;
+          flex-grow: $grow;
+}
+
+
+@mixin flex-shrink($shrink) {
+  -webkit-flex-shrink: $shrink;
+     -moz-flex-shrink: $shrink;
+      -ms-flex-shrink: $shrink;
+          flex-shrink: $shrink;
+}
+
+
+@mixin flex-basis($width) {
+  -webkit-flex-basis: $width;
+     -moz-flex-basis: $width;
+      -ms-flex-basis: $width;
+          flex-basis: $width;
+}
+
+
+// flex-start | flex-end | center | space-between | space-around 
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+     -moz-justify-content: $justify;
+      -ms-justify-content: $justify;
+          justify-content: $justify;
+            -ms-flex-pack: $justify;
+}
+
+// flex-start | flex-end | center | space-between | space-around | stretch 
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+     -moz-align-content: $align;
+      -ms-align-content: $align;
+          align-content: $align;
+}
+
+
+// flex-start | flex-end | center | baseline | stretch 
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+     -moz-align-items: $align;
+      -ms-align-items: $align;
+          align-items: $align;
+}
+
+
+// auto | flex-start | flex-end | center | baseline | stretch 
+@mixin align-self($align) {
+  -webkit-align-self: $align;
+     -moz-align-self: $align;
+      -ms-align-self: $align;
+          align-self: $align;
+}
+
+@mixin appearance($appa) {
+  -webkit-appearance: $appa;
+     -moz-appearance: $appa;
+      -ms-appearance: $appa;
+          appearance: $appa;
+}
+
+
+@mixin transition { 
+    -webkit-transition: 300ms all linear 0s;
+       -moz-transition: 300ms all linear 0s;
+         -o-transition: 300ms all linear 0s;
+            transition: 300ms all linear 0s;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {@content}  
+    &:-moz-placeholder           {@content}
+    &::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content}  
+}

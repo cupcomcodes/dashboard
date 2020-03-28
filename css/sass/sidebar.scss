@@ -1,0 +1,216 @@
+/* list menu */
+.dash__list {
+  background: $white;
+  box-shadow: 2px 0px 24px 0px rgba(0, 0, 0, 0.07);
+  height: 100vh;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 50px;
+  transition: .4s;
+  z-index: 3; 
+
+  &-item {
+    position: relative; 
+  }
+  /* items menu */
+  &-link { 
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: .4s; 
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    span, i {
+      color: $primary; 
+    } 
+    &:hover {
+      background: $primary;
+      border-radius: 0px 5px 5px 0px;
+      text-decoration: none; 
+      i {
+        color: $white; 
+      }
+
+      .dash__list-name {
+        background: $primary;
+        left: 35px;
+        opacity: 1;
+        visibility: visible; 
+        color: $white;
+
+        &:before {
+          content: '';
+          position: absolute;
+          border-left: 2px solid $primary;
+          left: 12px;
+          top: -6px;
+          background: transparent;
+          width: 9px;
+          height: 7px;
+          border-radius: 0px 0px 0px 10px;
+          visibility: visible;
+          opacity: 1; 
+        }
+        
+        
+        &:after {
+          content: '';
+          position: absolute;
+          border-left: 2px solid $primary;
+          left: 12px;
+          bottom: -6px;
+          background: transparent;
+          width: 9px;
+          height: 7px;
+          border-radius: 10px 0px 0px 0px;
+          visibility: visible;
+          opacity: 1; 
+        }
+      }
+    }
+  } 
+  &-name {
+    align-items: center;
+    background: $white;
+    border-radius: 26px;
+    box-shadow: 2px 0px 24px 0px rgba(0, 0, 0, 0.07);
+    color: $white;
+    @include flexbox();
+    font-size: 12px;
+    height: 30px;
+    left: 0;
+    opacity: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    transition: .4s;
+    visibility: hidden; 
+
+    &:before {
+      content: '';
+      border-color: transparent;
+      visibility: hidden;
+      opacity: 0; 
+    }
+
+    &:after {
+      content: '';
+      border-color: transparent;
+      visibility: hidden;
+      opacity: 0; 
+    }
+  }
+}
+
+
+.dash__sub {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+
+  &-link {
+    padding: 15px;
+    color: $secondary;
+    display: block;
+    width: 100%;
+    transition: .2s;
+    font-size: 12px;
+    &:hover {
+      background: $primary;
+      color: $white;
+      text-decoration: none; 
+    } 
+  }
+}
+
+
+/* if the class .expand is active in .dash_container perform the actions below */
+.dash__container{
+  &.expand {
+    .dash__section {
+      width: 225px; 
+      .dash__list {
+        width: 200px;
+        
+        .dash__list-link {
+          width: auto;
+          justify-content: start;
+          padding-left: 15px; 
+
+          .dash__list-name {
+            position: static;
+            visibility: visible;
+            opacity: 1;
+            color: $text;
+            background: transparent;
+            box-shadow: none;
+            height: auto;
+            border-radius: none; 
+
+            &:before {
+              display: none;
+            }
+
+            &:after {
+              display: none;
+            }
+          }
+
+          &:hover {
+            border-radius: 0;
+            
+            .dash__list-name {
+              color: $white; 
+            }
+          }
+        }
+      }
+      .retract-item {
+        display: flex; 
+      }
+      .expand-item {
+        display: none; 
+      }
+    }
+  
+    .dash__container-content {
+      padding-left: 200px; 
+    }
+  }
+  .expand-item {
+    display: flex; 
+  }
+  .retract-item {
+    display: none; 
+  }
+} 
+
+
+@media (min-width: 991px) {
+  .collapse-expand .collapsing,
+  .collapse-expand .collapse.show {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: $white;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.07);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
+  .collapse-expand .dash_list-item-link[aria-expanded="true"] {
+    background: $primary; }
+  .collapse-expand .dash_list-item-link[aria-expanded="true"] i {
+    color: $white; }
+  .collapse-expand .dash_list-item-link[aria-expanded="true"]:hover {
+    border-radius: 0 !important; }
+  .collapse-expand .dash_list-item-link[aria-expanded="true"] .dash_list-item-name,
+  .collapse-expand .dash_list-item-link[aria-expanded="true"] .dash_list-item-name:before,
+  .collapse-expand .dash_list-item-link[aria-expanded="true"] .dash_list-item-name:after {
+    display: none; } }

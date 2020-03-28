@@ -1,0 +1,21 @@
+// variables
+@import "variables";
+
+// base
+@import "sidebar";
+@import "base";
+@import "header";
+@import "cards";
+@import "charts";
+@import "form";
+@import "table";
+@import "bootstrap-grid";
+@import "bootstrap-reboot.scss";
+@import "bootstrap.scss";
+@import "pages.scss"; 
+@import "bootoast.scss"; 
+
+
+// mobile
+
+@import "mobile" 

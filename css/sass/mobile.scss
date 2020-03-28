@@ -1,0 +1,34 @@
+
+/* mobile 768px */
+@media (max-width: 768px) {
+  .dash__list {
+    display: none; }
+  .dash__container.expand .dash__container-content,
+  .dash__container-content {
+    padding-left: 0; }
+  .search__input {
+    width: 155px; }
+  .dash__list-name .retract-item {
+    width: 30px; }
+  .dash__section-menu-mobile {
+    width: 30px;
+    height: 50px;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(center);
+    color: $primary; }
+  .dash__container.expand .dash__list {
+    display: block; }
+  .dash__container.expand:before {
+    background: #00000059;
+    content: '';
+    height: 100%; 
+    position: absolute;
+    width: 100%;
+    z-index: 2; }
+  .header__container {
+    padding: 0; } 
+  .dash__container.expand .dash__section {
+    width: 50px; }
+  .nav__menu-list-item-link span {
+    display: none; } }
