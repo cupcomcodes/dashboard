@@ -2914,7 +2914,8 @@ input[type="button"].btn-block {
   color: #495057;
   background-color: $white;
   border: 1px solid #ced4da;
-  border-radius: 0.25rem; }
+  border-radius: $radius;
+overflow: hidden;}
   .custom-file-label::after {
     position: absolute;
     top: 0;
