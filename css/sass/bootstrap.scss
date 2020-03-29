@@ -1427,7 +1427,7 @@ pre {
     background-color: $white;
     border-color: #80bdff;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem $primary; }
+    box-shadow: 0 0 0 0.2rem $focus; }
   .form-control::placeholder {
     color: #6c757d;
     opacity: 1; }
@@ -2295,7 +2295,8 @@ input[type="button"].btn-block {
   list-style: none;
   background-color: $white;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 0;
+  box-shadow: $dash_shadow;
   border-radius: 0.25rem; }
 
 .dropdown-menu-left {
@@ -2903,8 +2904,8 @@ input[type="button"].btn-block {
   margin: 0;
   opacity: 0; }
   .custom-file-input:focus ~ .custom-file-label {
-    border-color: #80bdff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+    border-color: $primary;
+    box-shadow: 0 0 0 0.2rem $focus }
   .custom-file-input[disabled] ~ .custom-file-label,
   .custom-file-input:disabled ~ .custom-file-label {
     background-color: #e9ecef; }
@@ -2913,7 +2914,7 @@ input[type="button"].btn-block {
   .custom-file-input ~ .custom-file-label[data-browse]::after {
     content: attr(data-browse); }
 
-.custom-file-label {
+.custom-file-label { 
   position: absolute;
   top: 0;
   right: 0;
@@ -2954,13 +2955,13 @@ overflow: hidden;}
   .custom-range:focus {
     outline: none; }
     .custom-range:focus::-webkit-slider-thumb {
-      box-shadow: 0 0 0 1px $white, 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      box-shadow: 0 0 0 1px $white, 0 0 0 0.2rem $focus;
      }
     .custom-range:focus::-moz-range-thumb {
-      box-shadow: 0 0 0 1px $white, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+      box-shadow: 0 0 0 1px $white, 0 0 0 0.2rem $focus; 
     }
     .custom-range:focus::-ms-thumb {
-      box-shadow: 0 0 0 1px $white, 0 0 0 0.2rem rgba(0, 123, 255, 0.25); 
+      box-shadow: 0 0 0 1px $white, 0 0 0 0.2rem $focus; 
     }
   .custom-range::-moz-focus-outer {
     border: 0; }
@@ -3400,7 +3401,7 @@ overflow: hidden;}
   word-wrap: break-word;
   background-color: $white;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 0;
   border-radius: 0.25rem; }
   .card > hr {
     margin-right: 0;
@@ -3607,7 +3608,7 @@ overflow: hidden;}
   .page-link:focus {
     z-index: 3;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+    box-shadow: 0 0 0 0.2rem $focus }
 
 .page-item:first-child .page-link {
   margin-left: 0;
@@ -3694,7 +3695,7 @@ overflow: hidden;}
     background-color: #0062cc; }
   a.badge-primary:focus, a.badge-primary.focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+    box-shadow: 0 0 0 0.2rem $focus; }
 
 .badge-secondary {
   color: $white;
@@ -3882,7 +3883,9 @@ overflow: hidden;}
 .jumbotron-fluid {
   padding-right: 0;
   padding-left: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  background-image: linear-gradient(-225deg, #2CD8D5 0%, #70a1ff 48%, #8E37D7 100%);
+}
 
 .alert {
   position: relative;
