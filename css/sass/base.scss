@@ -78,3 +78,29 @@
       }
     }
   }
+
+  .dropdown-nav-header {
+    min-width: 400px!important;
+    padding: 0!important;
+    overflow: hidden;
+  }
+
+  .profile-header {
+    width: 100%;
+    padding: 15px;
+    background: $primary;
+
+    .thumb-nail {
+      width: 50px;
+      height: 50px;
+    }
+
+  }
+
+  .profile-section {
+    .list-group .list-group-item {
+      padding: 3px 15px!important;
+      border: 0!important;
+
+    }
+  }

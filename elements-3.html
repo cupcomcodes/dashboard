@@ -98,14 +98,39 @@
                         <ul class="nav__menu-list">
                             <li class="nav__menu-list-item">
                                 <a href="#" class="nav__menu-list-item-link">
+                                    <span class="alert-dectect"></span>
                                     <i class="fas fa-bell"></i>
                                 </a>
                             </li>
-                            <li class="nav__menu-list-item">
-                                <a href="#" class="nav__menu-list-item-link px-3">
+                            <li class="nav__menu-list-item" >
+                                <a class="nav__menu-list-item-link px-3 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img class="thumb-nail" src="https://i.ibb.co/0VLnn12/thumb.jpg" alt="thumb">
                                     <span class="ml-3">Username Admin</span>
                                 </a>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-nav-header">
+                                   <header class="profile-header d-flex align-items-center justify-content-between">
+                                       <div class="d-flex align-items-center">
+                                        <img class="thumb-nail mr-3" src="https://i.ibb.co/0VLnn12/thumb.jpg" alt="thumb">
+                                        <div>
+                                            <strong class="d-block text-white">Profile Name</strong>
+                                            <span class="d-block text-white">Profile description user</span>
+                                         </div>
+                                       </div>
+                                       <button class="btn btn-danger">Logout</button>
+                                   </header>
+                                   <section class="profile-section">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><strong>ACTIVITY</strong></li>
+                                        <li class="list-group-item list-group-item-action d-flex align-items-center justify-content-between">Chat <span class="badge badge-info">2</span></li>
+                                        <li class="list-group-item list-group-item-action d-flex align-items-center justify-content-between">Tickets<span class="badge badge-info">2</span></li>
+                                        <li class="list-group-item list-group-item-action d-flex align-items-center justify-content-between">Orders<span class="badge badge-info">2</span></li>
+                                      </ul>
+                                   </section>
+                                   <footer class="profile-footer p-3 border-top">
+                                        <button class="btn btn-light"><i class="fas fa-edit mr-2 "></i>Edit account</button>
+                                        <button class="btn btn-light"> <i class="fas fa-paper-plane mr-2"></i>Send message box</button>
+                                   </footer>
+                                </div>
                             </li>
                         </ul>
                     </div>

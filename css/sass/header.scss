@@ -82,10 +82,22 @@
       height: 50px;
       min-width: 50px;
       transition: .4s;
-      width: auto; 
+      width: auto;
+      position: relative; 
       @include flexbox();
       @include justify-content(center);
       @include align-items(center);
+
+      .alert-dectect {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        display: block;
+        position: absolute;
+        background: $danger;
+        top: 9px;
+        right: 9px;
+      }
 
       &:hover {
         background: $primary;
