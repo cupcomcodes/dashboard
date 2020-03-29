@@ -182,6 +182,53 @@
                         </div>
                     </div>
                 </div>
+                <div class="card dash_shadow p-3 my-3">
+                    <div class="dash__title">
+                        <i class="fas fa-table"></i>
+                        <h5 class="dash__title-text">Tooltips</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <h3 class="mb-3">Tooltip</h3>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                Tooltip on top
+                              </button>
+                              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+                                Tooltip on right
+                              </button>
+                              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                                Tooltip on bottom
+                              </button>
+                              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                                Tooltip on left
+                              </button>
+                        </div>
+
+                        <div class="col-md-6 col-12">
+                            <h3 class="mb-3">Popover</h3>
+                    
+                            <button type="button" id="example" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                Popover on top
+                              </button>
+                              
+                              <button type="button" id="example" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                Popover on right
+                              </button>
+                              
+                              <button type="button" id="example" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+                              sagittis lacus vel augue laoreet rutrum faucibus.">
+                                Popover on bottom
+                              </button>
+                              
+                              <button type="button" id="example" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                Popover on left
+                              </button>
+<hr>
+                              <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+                        </div>
+                    </div>
+                </div>
                 <footer class="p-3 d-flex justify-content-between bg-white">
                     <span>Copyright © 2020 <a href="https://www.cupcom.com.br/" target="_blank">Cupcom</a>. All rights reserved.</span>
                     <span>Hand-crafted & made with <i class="fas fa-heart ml-2 text-danger"></i></span>
@@ -196,11 +243,15 @@
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
         <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
         <script src="js/root.js"></script>
         <script src="js/bootoast.min.js"></script>
+        <script>
+            $(function () {
+             $('[data-toggle="tooltip"]').tooltip();
+             $('[data-toggle="popover"]').popover()
+             })
+        </script>
 </body>
 
 </html>
